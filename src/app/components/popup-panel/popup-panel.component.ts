@@ -8,8 +8,10 @@ import { Component, Input } from '@angular/core';
 export class PopupPanelComponent {
   @Input() type: any = 1;
   @Input() className: any = '';
+  @Input() disabled: any = false;
   show: boolean = false;
   setShow(param: any) {
+    if(this.disabled) return;
     this.show = param;
   }
   getClass() {
