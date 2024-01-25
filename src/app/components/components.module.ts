@@ -7,6 +7,8 @@ import { DrillersComponent } from './icons/drillers/drillers.component';
 import { PackageWaterComponent } from './icons/package-water/package-water.component';
 import { WaterOilComponent } from './icons/water-oil/water-oil.component';
 import { WaterTankSupplierComponent } from './icons/water-tank-supplier/water-tank-supplier.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { PopupPanelComponent } from './popup-panel/popup-panel.component';
 
 
 @NgModule({
@@ -17,10 +19,12 @@ import { WaterTankSupplierComponent } from './icons/water-tank-supplier/water-ta
     DrillersComponent,
     PackageWaterComponent,
     WaterTankSupplierComponent,
+    PopupPanelComponent,
     WaterOilComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CarouselModule,
   ],
   exports: [
     HeaderCarouselComponent,
@@ -29,6 +33,7 @@ import { WaterTankSupplierComponent } from './icons/water-tank-supplier/water-ta
     DrillersComponent,
     PackageWaterComponent,
     WaterTankSupplierComponent,
+    PopupPanelComponent,
     WaterOilComponent
   ],
   providers: [
@@ -38,6 +43,7 @@ import { WaterTankSupplierComponent } from './icons/water-tank-supplier/water-ta
     DrillersComponent,
     PackageWaterComponent,
     WaterTankSupplierComponent,
+    PopupPanelComponent,
     WaterOilComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

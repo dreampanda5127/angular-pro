@@ -1,0 +1,36 @@
+::ng-deep .owl-dots {
+    position: absolute !important;
+    right: 3% !important;
+    bottom: 11px !important;
+    z-index: 5 !important;
+    counter-reset: section;
+}
+::ng-deep .owl-nav {
+    display: none !important;
+}
+::ng-deep .owl-dot.owl-dot-text span {
+    width: 25px !important;
+    height: 25px !important;
+    position: relative !important;
+    border: 1px solid #0CB9DE !important;
+    background: #ffffffb2 !important;
+    opacity: .7 !important;
+    margin: 5px !important;
+}
+::ng-deep .owl-dot.owl-dot-text.active span {
+    background: #ffffffdc !important;
+}
+
+
+::ng-deep .owl-dot.owl-dot-text span::before {
+    display: block;
+    counter-increment: section;
+    content: "" counter(section) "";
+    position: absolute !important;
+    z-index: 1 !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    color: #158BA0 !important;
+    font-weight: bold !important;
+}
