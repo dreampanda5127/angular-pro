@@ -1,4 +1,6 @@
 <app-header></app-header>
+<app-side-popup></app-side-popup>
+<app-header-carousel></app-header-carousel>
 <app-navbar></app-navbar>
 <div>
   <!-- tab container -->
@@ -16,15 +18,15 @@
     <div class="rounded-lg p-3 bg-white">
       <div class="flex justify-between gap-3">
         <div class="w-3/5">
-          <div class="rounded-2xl border border-[#DDDDDD] shadow-sm">
-            <div class="rounded-t-2xl px-2 py-2 text-sm bg-[#DDDDDD]">
+          <div class="rounded-2xl border border-[#EFEFEF] shadow-sm mb-4">
+            <div class="rounded-t-2xl px-2 py-2 text-sm bg-[#EFEFEF]">
               In Focus...
             </div>
-            <div class="p-4 text-xl">
+            <div class="p-4 text-xl" style="line-height: 2">
               <h1 class="font-bold text-2xl mb-4">
                 Lagos State Water Regulatory Commission (LASWARCO)
               </h1>
-              <p class="mb-6">
+              <p class="mb-10">
                 Lagos State, an emerging model mega city and the smallest state
                 in West Africa is a ‘mini Mecca’ of some sorts due to the daily
                 influx of people into the city for both trade and investment
@@ -32,7 +34,7 @@
                 of the State triggered by the rapid infrastructural development
                 of the aquatic state.
               </p>
-              <p class="mb-6">
+              <p class="mb-10">
                 Her population according to the Lagos State Bureau of Statistics
                 (LBS) is put at over 22,583,305 Million (Lagos State Estimate,
                 2014), and a population growth rate of 3.2 %. The United Nations
@@ -40,7 +42,7 @@
                 to about 24.5m at a growth rate of 6-8% per annum making Lagos
                 State the 3rd Largest Mega city in the world.
               </p>
-              <p class="mb-6">
+              <p class="mb-10">
                 Due to the aforementioned reasons, there is no doubt that Lagos
                 is the melting point of sub-Saharan Africa. This influx has
                 exerted great pressure on the available basic institutions
@@ -67,12 +69,14 @@
               </p>
             </div>
           </div>
+
+          <app-upcoming></app-upcoming>
         </div>
         <div class="w-2/5">
           <div
-            class="rounded-2xl px-2 border bg-[#DDDDDD] border-[#DDDDDD] shadow-sm"
+            class="rounded-2xl px-2 border bg-[#EFEFEF] border-[#EFEFEF] shadow-sm pb-32"
           >
-            <div class="rounded-t-2xl px-2 py-2 text-sm bg-[#DDDDDD] font-bold">
+            <div class="rounded-t-2xl px-2 py-2 text-sm bg-[#EFEFEF] font-bold">
               LASWARCO INTRODUCTIO
             </div>
             <div class="p-4 mb-3 rounded-2xl bg-white shadow-md">
@@ -238,7 +242,7 @@
               </div>
             </div>
 
-            <div class="py-2 px-4 bg-white rounded-2xl shadow-md">
+            <div class="py-2 px-4 bg-white rounded-2xl shadow-md mb-4">
               <div class="text-center font-bold">Get Social with Us!</div>
               <div class="mt-4 flex gap-3 items-center">
                 <img src="/assets/social-icons/ico_2.svg" />
@@ -254,3 +258,4 @@
     </div>
   </div>
 </div>
+<app-footer></app-footer>

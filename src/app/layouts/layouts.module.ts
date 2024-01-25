@@ -3,12 +3,16 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { ComponentsModule } from '../components/components.module';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { SidePopupComponent } from './side-popup/side-popup.component';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
+    FooterComponent,
+    SidePopupComponent,
     NavbarComponent
   ],
   imports: [
@@ -17,10 +21,14 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   exports: [
     HeaderComponent,
+    FooterComponent,
+    SidePopupComponent,
     NavbarComponent
   ],
   providers: [
     HeaderComponent,
+    FooterComponent,
+    SidePopupComponent,
     NavbarComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
