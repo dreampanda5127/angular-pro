@@ -1,6 +1,64 @@
-<div class="relative">
-  <div class="absolute">
-    <app-popup-bg></app-popup-bg>
+<div
+  class="relative"
+  (mouseenter)="setShow(true)"
+  (mouseleave)="setShow(false)"
+>
+  <div
+    [class]="getClass()"
+    class="absolute bottom-16 w-80 transition-all duration-200 z-10 rtl:-z-10"
+    *ngIf="type == 1"
+  >
+    <img src="/assets/icons/bg_popup_yellow.svg" />
+    <div class="absolute h-[100%-40px] left-0 top-0 p-2 py-4">
+      <h1 class="font-bold ml-2 text-3xl">DID YOU KNOW?</h1>
+      <div
+        class="mt-0 rounded-xl bg-[#F7F4B8] py-1 px-2 h-24 overflow-y-auto text-[#531B1B] text-xs font-bold scroll-yellow"
+      >
+        LASWARCO is the governing authority with full legal rights to manage and
+        regulate drillers' and water tanker's operations and its licensing in
+        Lagos State. We enforce regulations to ensure the provision of safe and
+        reliable water supply across the state. By obtaining licenses from the
+        commission, drillers and water tanker operators are assured of
+        compliance with legal requirements and industry standards.
+      </div>
+      <div class="mt-1 flex justify-center items-center gap-4">
+        <button>
+          <img
+            src="/assets/icons/btn_ renew_license.svg"
+            class="w-32 cursor-pointer"
+          />
+        </button>
+        <button>
+          <img
+            src="/assets/icons/btn_new_license.svg"
+            class="w-32 cursor-pointer"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    [class]="{ block: show, hidden: !show }"
+    class="absolute bottom-16 w-80 transition-all duration-200"
+    *ngIf="type == 2"
+  >
+    <img src="/assets/icons/bg_popup_blue.svg" />
+    <div class="absolute h-[100%-40px] left-0 top-0 p-2 py-4">
+      <h1 class="font-bold ml-2 text-3xl">DID YOU KNOW?</h1>
+      <div
+        class="mt-0 rounded-xl bg-[#AEBBBE] bg-opacity-60 py-1 px-2 h-24 overflow-y-auto text-[#EDFCFD] text-xs font-bold scroll-blue"
+      >
+        LASWARCO is the governing authority with full legal rights to manage and
+        regulate drillers' and water tanker's operations and its licensing in
+        Lagos State. We enforce regulations to ensure the provision of safe and
+        reliable water supply across the state. By obtaining licenses from the
+        commission, drillers and water tanker operators are assured of
+        compliance with legal requirements and industry standards.
+      </div>
+      <div class="mt-1 flex justify-center items-center gap-4">
+        <img src="/assets/icons/btn_apply.svg" class="cursor-pointer w-32" />
+      </div>
+    </div>
   </div>
   <ng-content></ng-content>
 </div>

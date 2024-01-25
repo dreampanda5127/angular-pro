@@ -9,6 +9,7 @@ import { WaterOilComponent } from './icons/water-oil/water-oil.component';
 import { WaterTankSupplierComponent } from './icons/water-tank-supplier/water-tank-supplier.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { PopupPanelComponent } from './popup-panel/popup-panel.component';
+import { PopupBgComponent } from './popup-panel/popup-bg/popup-bg.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { PopupPanelComponent } from './popup-panel/popup-panel.component';
     PackageWaterComponent,
     WaterTankSupplierComponent,
     PopupPanelComponent,
+    PopupBgComponent,
     WaterOilComponent
   ],
   imports: [
@@ -34,6 +36,7 @@ import { PopupPanelComponent } from './popup-panel/popup-panel.component';
     PackageWaterComponent,
     WaterTankSupplierComponent,
     PopupPanelComponent,
+    PopupBgComponent,
     WaterOilComponent
   ],
   providers: [
@@ -44,6 +47,7 @@ import { PopupPanelComponent } from './popup-panel/popup-panel.component';
     PackageWaterComponent,
     WaterTankSupplierComponent,
     PopupPanelComponent,
+    PopupBgComponent,
     WaterOilComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

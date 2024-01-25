@@ -1,64 +1,86 @@
 <nav>
-  <div class="flex justify-between px-8">
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_permit.svg" />
-      Permits
-    </a>
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_license.svg" />
-      License
-    </a>
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_programs.svg" />
-      Programs
-    </a>
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_drinking.svg" />
-      Drinking Water
-    </a>
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_water_quality.svg" />
-      Water Quality
-    </a>
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_search.svg" />
-      Search
-    </a>
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_water_right.svg" />
-      Water Rights
-    </a>
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_notice.svg" />
-      Notices
-    </a>
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_setting.svg" />
-      Web Tool
-    </a>
-    <a
-      class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
-    >
-      <img src="/assets/icons/ico_webtool.svg" />
-      Web Tool
-    </a>
+  <div
+    class="flex justify-between px-8 max-md:flex-col max-md:justify-center max-md:items-center"
+  >
+    <app-popup-panel type="2" className="">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_permit.svg" />
+        Permits
+      </a>
+    </app-popup-panel>
+    <app-popup-panel type="1" className="">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_license.svg" />
+        License
+      </a>
+    </app-popup-panel>
+    <app-popup-panel type="1" className="left-4">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_programs.svg" />
+        Programs
+      </a>
+    </app-popup-panel>
+    <app-popup-panel type="1" className="left-8">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_drinking.svg" />
+        Drinking Water
+      </a>
+    </app-popup-panel>
+    <app-popup-panel type="1" className="left-6">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_water_quality.svg" />
+        Water Quality
+      </a>
+    </app-popup-panel>
+    <app-popup-panel type="1" className="">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_search.svg" />
+        Search
+      </a>
+    </app-popup-panel>
+    <app-popup-panel type="1" className="left-4">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_water_right.svg" />
+        Water Rights
+      </a>
+    </app-popup-panel>
+    <app-popup-panel type="1" className="">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_notice.svg" />
+        Notices
+      </a>
+    </app-popup-panel>
+    <app-popup-panel type="1" className="">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_setting.svg" />
+        Web Tool
+      </a>
+    </app-popup-panel>
+    <app-popup-panel type="1" className="">
+      <a
+        class="flex flex-col gap-2 items-center justify-center px-4 py-3 text-sm cursor-pointer hover:bg-[#E6F8FC] whitespace-nowrap overflow-hidden text-ellipsis"
+      >
+        <img src="/assets/icons/ico_webtool.svg" />
+        Web Tool
+      </a>
+    </app-popup-panel>
   </div>
 </nav>

@@ -2,12 +2,30 @@
   <div
     class="flex justify-between bg-[#0CB9DE] border-t border-t-[#0CB9DE] border-b-2 border-b-[#F9C301]"
   >
-    <div class="flex justify-start gap-3">
-      <a class="bg-[#F9C301] text-white px-4 py-1 cursor-pointer">Home</a>
-      <a class="text-white px-4 py-1 cursor-pointer">About Us</a>
-      <a class="text-white px-4 py-1 cursor-pointer">Executive Secretary</a>
-      <a class="text-white px-4 py-1 cursor-pointer">Staffs</a>
-      <a class="text-white px-4 py-1 cursor-pointer flex items-center gap-2">
+    <button
+      class="hidden max-lg:block bg-[#F9C301] text-white max-lg:px-2 px-8 py-1 cursor-pointer"
+    ></button>
+    <div class="flex justify-start gap-3 max-lg:hidden">
+      <a
+        class="bg-[#F9C301] text-white max-lg:px-2 px-4 py-1 cursor-pointer hover:bg-[#F9C301] active:bg-[#F9C302]"
+        >Home</a
+      >
+      <a
+        class="text-white max-lg:px-2 px-4 py-1 cursor-pointer hover:bg-[#F9C301] active:bg-[#F9C302]"
+        >About Us</a
+      >
+      <a
+        class="text-white max-lg:px-2 px-4 py-1 cursor-pointer hover:bg-[#F9C301] active:bg-[#F9C302]"
+        >Executive Secretary</a
+      >
+      <a
+        class="text-white max-lg:px-2 px-4 py-1 cursor-pointer hover:bg-[#F9C301] active:bg-[#F9C302]"
+        >Staffs</a
+      >
+      <a
+        class="text-white max-lg:px-2 px-4 py-1 cursor-pointer hover:bg-[#F9C301] active:bg-[#F9C302] flex items-center gap-2"
+        routerLink="operator"
+      >
         Oerators
         <svg
           width="24"
@@ -66,8 +84,13 @@
           </defs>
         </svg>
       </a>
-      <a class="text-white px-4 py-1 cursor-pointer">Contact Us</a>
-      <a class="text-white px-4 py-1 cursor-pointer flex items-center gap-2">
+      <a
+        class="text-white max-lg:px-2 px-4 py-1 cursor-pointer hover:bg-[#F9C301] active:bg-[#F9C302]"
+        >Contact Us</a
+      >
+      <a
+        class="text-white max-lg:px-2 px-4 py-1 cursor-pointer hover:bg-[#F9C301] active:bg-[#F9C302] flex items-center gap-2"
+      >
         <svg
           width="22"
           height="23"
@@ -84,7 +107,7 @@
       </a>
     </div>
     <a
-      class="flex items-center gap-2 bg-[#F9C301] border text-white border-white rounded-sm px-4 py-1 cursor-pointer"
+      class="flex items-center gap-2 bg-[#F9C301] border text-white border-white rounded-sm max-lg:px-2 px-4 py-1 cursor-pointer"
     >
       <span>
         <svg
